@@ -749,6 +749,36 @@ That makes the repository useful for:
 
 ---
 
+# Project Documentation
+
+| Resource | Purpose |
+|:---|:---|
+| [Learning Path](./docs/LEARNING_PATH.md) | Complete seven-stage curriculum |
+| [Contributing Guide](./CONTRIBUTING.md) | Standards for improving notebooks and documentation |
+| [Code of Conduct](./CODE_OF_CONDUCT.md) | Community expectations |
+| [Security Policy](./SECURITY.md) | Security reporting guidance |
+| [Citation](./CITATION.cff) | Citation metadata |
+| [Issue Templates](./.github/ISSUE_TEMPLATE/) | Structured bug and feature reports |
+
+---
+
+# Contributions
+
+This is primarily a personal learning laboratory, but improvements are welcome.
+
+Useful contributions include:
+
+- correcting technical explanations;
+- fixing broken notebooks or links;
+- improving reproducibility;
+- adding focused experiments;
+- improving visualizations;
+- documenting edge cases or lessons learned.
+
+Before contributing, read the [Contributing Guide](./CONTRIBUTING.md).
+
+---
+
 # Author
 
 <div align="center">
