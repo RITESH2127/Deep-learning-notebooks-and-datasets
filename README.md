@@ -41,8 +41,6 @@
 
 ---
 
----
-
 ## What is this repository?
 
 This repository is a **hands-on deep learning laboratory** built around executable Jupyter notebooks and supporting datasets.
@@ -51,13 +49,13 @@ Instead of treating deep learning as a collection of black-box APIs, the noteboo
 
 - **Neural-network fundamentals**
 - **Gradient descent and optimization**
--  **Initialization and training dynamics**
--  **Regularization and generalization**
+- **Initialization and training dynamics**
+- **Regularization and generalization**
 - **Multilayer perceptrons**
--  **Convolutional neural networks**
--  **Image classification and augmentation**
+- **Convolutional neural networks**
+- **Image classification and augmentation**
 - **Transfer learning**
--  **Functional neural-network architectures**
+- **Functional neural-network architectures**
 - **Applied machine-learning workflows**
 
 > **Learning principle:** understand the mechanism -> implement it -> visualize its behavior -> use it in a model.
@@ -71,7 +69,7 @@ Instead of treating deep learning as a collection of black-box APIs, the noteboo
 | Jupyter notebooks | **31** |
 |  CSV datasets | **8** |
 |  Image assets | **2** |
-| Total tracked files | **46** |
+| Total tracked files | **54** |
 | Core learning tracks | **7** |
 |  Primary ecosystem | **Python + TensorFlow/Keras + NumPy** |
 
@@ -127,12 +125,15 @@ The repository follows a deliberate progression: first understand how neural net
 
 | Track | What you learn | Representative notebooks |
 |:---|:---|:---|
+| Track | What you learn | Representative notebooks |
+|:---|:---|:---|
 | **01 Foundations** | Perceptrons, neural networks, backpropagation | Perceptron, neural_network_scratch, backpropagation_* |
 | **02 Optimization** | Gradient descent, optimizers, EWMA, optimization geometry | Batch_vs_stochastic_GD, Optimizers, EWMA |
 | **03 Training** | Scaling, initialization, batch normalization, gradient behavior | feature_scaling, Xavier_and_He, batch_norm_example |
 | **04 Generalization** | Regularization, dropout, early stopping, hyperparameter tuning | regularizationNN, dropout_classification, early_stopping |
 | **05 Vision** | Convolution, pooling, padding, strides, CNN architectures | CNN_from_scratch, LENET5_CNN, ImageClassifierCNN |
-| **06 Transfer & Applied DL** | VGG16, ImageNet, MLP applications and functional APIs | transfer_learning_VGG16, pre_trained_imagenet_and_plots |
+| **06 Transfer Learning** | VGG16, ImageNet, pretrained representations | transfer_learning_VGG16, pre_trained_imagenet_and_plots |
+| **07 Applied DL** | MLP-based classification and regression workflows | MNIST_digits_MLP, Regression_MLP, CustomerChurnPredictionMLP |
 
 ---
 
@@ -401,25 +402,26 @@ This structure is intentionally explicit: every node is connected to the single 
 
 # Run It
 
+There are two clean ways to use the laboratory.
 
 ## Option A — Google Colab
 
-Choose a notebook above and click its **Open Colab** link.
+Choose any notebook in the [Notebook Atlas](#notebook-atlas) and click its **Open Colab** link.
 
-No local environment is required for the basic notebook workflow.
+This is the fastest path for experimentation without configuring a local environment.
 
 ## Option B — Run locally
 
-### 1. Clone
+### 1. Clone the repository
 
-~~~bash
+```bash
 git clone https://github.com/RITESH2127/Deep-learning-notebooks-and-datasets.git
 cd Deep-learning-notebooks-and-datasets
 ```
 
-### 2. Create an environment
+### 2. Create an isolated environment
 
-~~~bash
+```bash
 python -m venv .venv
 ```
 
@@ -427,32 +429,36 @@ Activate it:
 
 **Windows**
 
-~~~powershell
-.venv\Scripts\activate
+```powershell
+.venv\\Scripts\\activate
 ```
 
 **macOS / Linux**
 
-~~~bash
+```bash
 source .venv/bin/activate
 ```
 
-### 3. Install the common notebook stack
+### 3. Install the baseline environment
 
-~~~bash
+```bash
 python -m pip install --upgrade pip
-pip install jupyter numpy pandas matplotlib scikit-learn tensorflow
+pip install -r requirements.txt
 ```
-
-> Individual notebooks can require additional packages or external model/data downloads. If a notebook reports a missing dependency, install the package required by that notebook.
 
 ### 4. Start Jupyter
 
-~~~bash
+```bash
 jupyter notebook
 ```
 
 Then open the notebook you want to explore.
+
+> Some notebooks may use additional packages, external datasets, or pretrained weights. Install notebook-specific dependencies only when required.
+
+### Fastest path
+
+**Clone → install → open a notebook → run top-to-bottom → change one variable → compare → explain.**
 
 ---
 
@@ -559,58 +565,57 @@ If you are learning deep learning from the beginning, follow this progression ra
 
 ### Phase 1 — Understand the neuron
 
-**Perceptron**
-v
+**Perceptron** →
 **Problem with perceptron**
-v
+→
 **Neural network from scratch**
 
 ### Phase 2 — Learn how models learn
 
 **Backpropagation**
-v
+→
 **Gradient descent**
-v
+→
 **Optimizers**
 
 ### Phase 3 — Understand training behavior
 
 **Feature scaling**
-v
+→
 **Xavier / He initialization**
-v
+→
 **Batch normalization**
-v
+→
 **Vanishing gradients**
 
 ### Phase 4 — Control overfitting
 
 **Regularization**
-v
+→
 **Dropout**
-v
+→
 **Early stopping**
-v
+→
 **Hyperparameter tuning**
 
 ### Phase 5 — Enter computer vision
 
 **Padding & strides**
-v
+→
 **Pooling**
-v
+→
 **CNN from scratch**
-v
+→
 **LeNet-5**
-v
+→
 **Image classification**
-v
+→
 **Image data generation**
 
 ### Phase 6 — Use pretrained representations
 
 **VGG16 transfer learning**
-v
+→
 **ImageNet pretrained models**
 
 ### Phase 7 — Build applied models
@@ -652,62 +657,64 @@ By working through the collection, you can build practical understanding of:
 # Repository Design
 
 ```mermaid
-flowchart TB
- R[" Repository"]
+flowchart LR
+    R["Deep Learning Laboratory"]
 
- R --> N[" 31 Notebooks"]
- R --> D[" 8 CSV Datasets"]
- R --> I[" 2 Image Assets"]
+    R --> F["Foundations"]
+    R --> O["Optimization"]
+    R --> T["Training Dynamics"]
+    R --> G["Generalization"]
+    R --> V["Computer Vision"]
+    R --> P["Transfer Learning"]
+    R --> A["Applied Models"]
 
- N --> F["Foundations"]
- N --> O["Optimization"]
- N --> T["Training Dynamics"]
- N --> G["Generalization"]
- N --> C["CNN / Vision"]
- N --> P["Pretrained Models"]
- N --> A["Applied Models"]
-
- F --> O
- O --> T
- T --> G
- G --> C
- C --> P
- C --> A
- P --> A
+    F --> O --> T --> G --> V --> P --> A
+    G --> A
 ```
+
+The repository is organized around dependency of ideas: understand the neuron first, understand optimization next, then study training behavior and generalization before moving into vision, pretrained models, and applied workflows.
 
 ---
 
 # Repository Structure
 
-The repository keeps notebooks and datasets easy to discover from the root, while supporting files are separated into dedicated directories.
-
 ```text
 Deep-learning-notebooks-and-datasets/
 │
-├── *.ipynb                         # 31 learning notebooks
-├── *.csv                           # 8 datasets
+├── 31 *.ipynb                       # Learning notebooks
+├── 8 *.csv                          # Datasets
 ├── doggo.jpg
 ├── kitty-cat-kitten-pet-45201.jpeg
 │
 ├── visualizations/
-│   ├── dataset visualizations
+│   ├── hero-banner.svg
+│   ├── 8 dataset visualizations
 │   ├── repository-overview.svg
 │   └── learning-coverage.svg
+│
+├── docs/
+│   └── LEARNING_PATH.md
 │
 ├── scripts/
 │   └── validate_repository.py
 │
 ├── .github/
-│   └── workflows/
-│       └── validate-repository.yml
+│   ├── workflows/
+│   │   └── validate-repository.yml
+│   ├── ISSUE_TEMPLATE/
+│   └── dependabot.yml
 │
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── SECURITY.md
+├── CITATION.cff
+├── .gitignore
 ├── requirements.txt
 ├── LICENSE
 └── README.md
 ```
 
-The README provides the conceptual organization while the physical repository remains intentionally simple, so every notebook can be opened directly from GitHub or Google Colab.
+The root remains intentionally notebook-friendly. Documentation, validation, contribution guidance, and automation are separated into dedicated directories.
 
 ---
 
@@ -720,7 +727,7 @@ The notebooks cover both **low-level intuition** and **higher-level frameworks**
 That makes the repository useful for:
 
 - Students learning deep learning
--  Developers building ML foundations
+- Developers building ML foundations
 - Experimentation and rapid prototyping
 - Exam and interview revision
 - Understanding neural-network internals
