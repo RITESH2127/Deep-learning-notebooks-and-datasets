@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "Deep Learning Notebooks & Datasets"
+message: "If you use this repository in academic or educational work, please cite it."
+type: software
+authors:
+  - family-names: Kumar
+    given-names: Ritesh
+repository-code: "https://github.com/RITESH2127/Deep-learning-notebooks-and-datasets"
+url: "https://github.com/RITESH2127/Deep-learning-notebooks-and-datasets"
+license: MIT
+keywords:
+  - deep learning
+  - machine learning
+  - neural networks
+  - TensorFlow
+  - Keras
+  - computer vision
+  - Jupyter notebooks
