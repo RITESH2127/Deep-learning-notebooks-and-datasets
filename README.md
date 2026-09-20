@@ -44,13 +44,13 @@ Instead of treating deep learning as a collection of black-box APIs, the noteboo
 
 - **Neural-network fundamentals**
 - **Gradient descent and optimization**
-- ️ **Initialization and training dynamics**
-- ️ **Regularization and generalization**
+-  **Initialization and training dynamics**
+-  **Regularization and generalization**
 - **Multilayer perceptrons**
-- ️ **Convolutional neural networks**
-- ️ **Image classification and augmentation**
+-  **Convolutional neural networks**
+-  **Image classification and augmentation**
 - **Transfer learning**
-- ️ **Functional neural-network architectures**
+-  **Functional neural-network architectures**
 - **Applied machine-learning workflows**
 
 > **Learning principle:** understand the mechanism -> implement it -> visualize its behavior -> use it in a model.
@@ -62,11 +62,11 @@ Instead of treating deep learning as a collection of black-box APIs, the noteboo
 | Component | Current contents |
 |:---|---:|
 | Jupyter notebooks | **31** |
-| ️ CSV datasets | **8** |
-| ️ Image assets | **2** |
+|  CSV datasets | **8** |
+|  Image assets | **2** |
 | Total tracked files | **43** |
 | Core learning tracks | **6+** |
-| ️ Primary ecosystem | **Python + TensorFlow/Keras + NumPy** |
+|  Primary ecosystem | **Python + TensorFlow/Keras + NumPy** |
 
 ### The learning curve
 
@@ -74,23 +74,25 @@ Instead of treating deep learning as a collection of black-box APIs, the noteboo
 
 ---
 
-## ️ Learning Architecture
+## Learning Architecture
 
-~~~mermaid
+```mermaid
 flowchart LR
- A[" Foundations<br/>Perceptron<br/>Neural Network<br/>Backpropagation"]
- B[" Optimization<br/>Gradient Descent<br/>Optimizers<br/>EWMA"]
- C[" Training Dynamics<br/>Scaling<br/>Xavier / He<br/>Batch Normalization"]
- D[" Generalization<br/>Regularization<br/>Dropout<br/>Early Stopping"]
- E[" Computer Vision<br/>CNN<br/>Pooling<br/>Padding<br/>LeNet-5"]
- F[" Modern Vision<br/>Image Classification<br/>Augmentation<br/>VGG16<br/>ImageNet"]
- G[" Applied Models<br/>MNIST<br/>Regression<br/>Customer Churn"]
+    A["Foundations"]
+    B["Optimization"]
+    C["Training Dynamics"]
+    D["Generalization"]
+    E["Computer Vision"]
+    F["Transfer Learning"]
+    G["Applied Deep Learning"]
 
- A --> B --> C --> D --> E --> F
- D --> G
- E --> G
- F --> G
-~~~
+    A --> B --> C --> D --> E --> F --> G
+    D --> G
+    E --> G
+    F --> G
+```
+
+The repository follows a deliberate progression: first understand how neural networks work, then understand how they learn, then control training behavior, and finally apply the ideas to vision and real datasets.
 
 ---
 
@@ -98,15 +100,34 @@ flowchart LR
 
 | Track | What you learn | Representative notebooks |
 |:---|:---|:---|
-| **01 | Foundations** | Perceptrons, neural networks, backpropagation | Perceptron, neural_network_scratch, backpropagation_* |
-| **02 | Optimization** | Gradient descent, optimizers, EWMA, optimization geometry | Batch_vs_stochastic_GD, Optimizers, EWMA |
-| **03 | Training** | Scaling, initialization, batch normalization, gradient behavior | feature_scaling, Xavier_and_He, batch_norm_example |
-| **04 | Generalization** | Regularization, dropout, early stopping, hyperparameter tuning | regularizationNN, dropout_classification, early_stopping |
-| **05 | Vision** | Convolution, pooling, padding, strides, CNN architectures | CNN_from_scratch, LENET5_CNN, ImageClassifierCNN |
-| **06 | Transfer & Applied DL** | VGG16, ImageNet, MLP applications and functional APIs | transfer_learning_VGG16, pre_trained_imagenet_and_plots |
+| **01 Foundations** | Perceptrons, neural networks, backpropagation | Perceptron, neural_network_scratch, backpropagation_* |
+| **02 Optimization** | Gradient descent, optimizers, EWMA, optimization geometry | Batch_vs_stochastic_GD, Optimizers, EWMA |
+| **03 Training** | Scaling, initialization, batch normalization, gradient behavior | feature_scaling, Xavier_and_He, batch_norm_example |
+| **04 Generalization** | Regularization, dropout, early stopping, hyperparameter tuning | regularizationNN, dropout_classification, early_stopping |
+| **05 Vision** | Convolution, pooling, padding, strides, CNN architectures | CNN_from_scratch, LENET5_CNN, ImageClassifierCNN |
+| **06 Transfer & Applied DL** | VGG16, ImageNet, MLP applications and functional APIs | transfer_learning_VGG16, pre_trained_imagenet_and_plots |
 
 ---
 
+## What You Will Learn
+
+This repository is designed as a progressive learning path rather than a random notebook collection.
+
+| Stage | Core question | Main topics |
+|:---|:---|:---|
+| **1. Foundations** | How does a neural network make a prediction? | Perceptron, neurons, forward propagation, backpropagation |
+| **2. Optimization** | How does a model learn its parameters? | Gradient descent, stochastic updates, optimizers, optimization geometry |
+| **3. Training Dynamics** | Why does training succeed or fail? | Feature scaling, initialization, batch normalization, vanishing gradients |
+| **4. Generalization** | How do we prevent memorization? | Regularization, dropout, early stopping, hyperparameter tuning |
+| **5. Computer Vision** | How can neural networks understand images? | Convolution, padding, stride, pooling, CNN architectures, augmentation |
+| **6. Transfer Learning** | How can pretrained knowledge be reused? | VGG16, ImageNet, pretrained representations |
+| **7. Applied Deep Learning** | How do these ideas become practical models? | MNIST, regression, customer churn |
+
+### Recommended first-time path
+
+**Perceptron → Neural Network from Scratch → Backpropagation → Gradient Descent → Optimizers → Initialization → Batch Normalization → Regularization → CNN → LeNet-5 → Image Classification → Transfer Learning → Applied Models**
+
+---
 # Notebook Atlas
 
 > **Tip:** Every notebook can be opened directly from the tables below. The **Colab** links use the repository's current main branch.
@@ -239,22 +260,40 @@ Every dataset in the repository now has a dedicated, repository-hosted visualiza
 
 ---
 
-## Dataset Lab
+## Dataset Directory
 
-The repository currently contains **8 CSV datasets** used across experiments.
+The repository contains eight CSV datasets covering classification, regression, nonlinear decision boundaries, and time-series experimentation.
 
-| Dataset | Format | Learning context |
-|:---|:---:|:---|
-| [Admission_Predict_Ver1.1.csv](./Admission_Predict_Ver1.1.csv) | CSV | Regression / prediction |
-| [Churn_Modelling.csv](./Churn_Modelling.csv) | CSV | Customer churn classification |
-| [DailyDelhiClimate.csv](./DailyDelhiClimate.csv) | CSV | Time-series / climate experiments |
-| [Social_Network_Ads.csv](./Social_Network_Ads.csv) | CSV | Binary classification |
-| [car_prices.csv](./car_prices.csv) | CSV | Regression / tabular ML |
-| [concertriccir2.csv](./concertriccir2.csv) | CSV | Non-linear classification |
-| [diabetes.csv](./diabetes.csv) | CSV | Binary classification |
-| [ushape.csv](./ushape.csv) | CSV | Non-linear classification |
+| Dataset | Rows | Columns | Primary target / signal | Learning use |
+|:---|---:|---:|:---|:---|
+| [Admission_Predict_Ver1.1.csv](./Admission_Predict_Ver1.1.csv) | 500 | 9 | Chance of Admit | Regression / prediction |
+| [Churn_Modelling.csv](./Churn_Modelling.csv) | 10,000 | 14 | Exited | Binary classification |
+| [DailyDelhiClimate.csv](./DailyDelhiClimate.csv) | 1,576 | 5 | Mean temperature / climate variables | Time-series exploration |
+| [Social_Network_Ads.csv](./Social_Network_Ads.csv) | 400 | 5 | Purchased | Binary classification |
+| [car_prices.csv](./car_prices.csv) | 13 | 5 | Sell Price | Regression |
+| [concertriccir2.csv](./concertriccir2.csv) | 499 | 2 | Class geometry | Nonlinear classification |
+| [diabetes.csv](./diabetes.csv) | 768 | 9 | Outcome | Binary classification |
+| [ushape.csv](./ushape.csv) | 99 | 2 | Class geometry | Nonlinear classification |
 
-> Dataset descriptions indicate the learning context suggested by the repository's notebook and dataset naming. They are not formal provenance statements.
+> Row and column counts reflect the repository files currently tracked on the main branch. Dataset interpretation is provided for learning and navigation.
+
+### Data workflow
+
+```text
+Raw Dataset
+    ↓
+Inspect Structure
+    ↓
+Visualize Relationships
+    ↓
+Preprocess / Scale
+    ↓
+Train Model
+    ↓
+Evaluate Metrics
+    ↓
+Interpret Results
+```
 
 ---
 
@@ -331,7 +370,7 @@ flowchart TD
     class B1,B2,B3,C1,C2,C3,C4,D1,D2,D3,D4,D5,D6,E1,E2,E3,E4,E5,E6,E7,F1,F2,F3,F4,F5,F6,F7,G1,G2,G3,H1,H2,H3 topic;
 ```
 
-This structure is intentionally explicit: every node is connected to the single root, so GitHub has one unambiguous graph hierarchy. GitHub supports Mermaid diagrams in Markdown files. citeturn0search1turn0search8
+This structure is intentionally explicit: every node is connected to the single root, so GitHub has one unambiguous graph hierarchy. GitHub supports Mermaid diagrams in Markdown files. 
 
 # Run It
 
@@ -390,6 +429,88 @@ Then open the notebook you want to explore.
 
 ---
 
+# Experiments & Results
+
+The notebooks are experiment-driven: each major concept is paired with an implementation or demonstration.
+
+| Experiment area | What to inspect | Typical evaluation |
+|:---|:---|:---|
+| Classification | Decision boundaries, loss, predictions | Accuracy, precision, recall, confusion matrix |
+| Regression | Predictions vs. actual values | MAE, MSE, RMSE, R² |
+| Optimization | Convergence and update behavior | Loss trajectory, convergence behavior |
+| Regularization | Training vs. validation behavior | Validation metric/loss gap |
+| CNNs | Feature extraction and image predictions | Accuracy, validation metrics, sample predictions |
+| Transfer learning | Reused vs. trainable representations | Validation/test performance |
+
+> Results should be read from the outputs generated by the individual notebook. The README intentionally does not invent benchmark numbers that have not been verified from a controlled run.
+
+---
+
+# Reproducibility
+
+The repository is intended to be runnable both locally and in Google Colab.
+
+### Baseline environment
+
+- **Python:** 3.x
+- **Notebook:** Jupyter / Google Colab
+- **Core ML stack:** NumPy, Pandas, Matplotlib, Scikit-learn
+- **Deep learning:** TensorFlow / Keras
+
+Install the baseline environment with:
+
+```bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+> Some notebooks may use additional packages, external datasets, or pretrained weights. Notebook-specific requirements should be installed when indicated inside the notebook.
+
+### Reproducibility checklist
+
+1. Create a clean virtual environment.
+2. Install the baseline requirements.
+3. Open a notebook from the recommended learning route.
+4. Run cells from top to bottom.
+5. Record the dataset, preprocessing, model configuration, and evaluation metric.
+6. Change one experimental variable at a time when comparing approaches.
+
+---
+
+# Notebook Quality Standard
+
+When extending this repository, each notebook should aim to follow this structure:
+
+```text
+1. Objective
+2. Dataset / Inputs
+3. Concept or Theory
+4. Implementation
+5. Visualization
+6. Training / Experiment
+7. Evaluation
+8. Key Observations
+9. Possible Improvements
+```
+
+This makes the collection useful for learning, revision, experimentation, interviews, and future project development.
+
+---
+
+# Repository Engineering
+
+The repository includes lightweight automated validation through GitHub Actions.
+
+The validation workflow checks:
+
+- notebook files are valid JSON;
+- required repository assets exist;
+- README references resolve to tracked files;
+- the expected notebook and dataset inventory is present.
+
+Workflow files are stored under `.github/workflows/`, following GitHub Actions conventions.
+
+---
 # Technology Stack
 
 | Layer | Technologies |
@@ -509,7 +630,7 @@ flowchart TB
 
  R --> N[" 31 Notebooks"]
  R --> D[" 8 CSV Datasets"]
- R --> I["️ 2 Image Assets"]
+ R --> I[" 2 Image Assets"]
 
  N --> F["Foundations"]
  N --> O["Optimization"]
@@ -530,59 +651,36 @@ flowchart TB
 
 ---
 
-# ️ Repository Structure
+# Repository Structure
 
-~~~text
+The repository keeps notebooks and datasets easy to discover from the root, while supporting files are separated into dedicated directories.
+
+```text
 Deep-learning-notebooks-and-datasets/
 │
-├── Foundations
-│ ├── Perceptron.ipynb
-│ ├── Problem_with_perceptron.ipynb
-│ ├── neural_network_scratch.ipynb
-│ └── backpropagation_*.ipynb
+├── *.ipynb                         # 31 learning notebooks
+├── *.csv                           # 8 datasets
+├── doggo.jpg
+├── kitty-cat-kitten-pet-45201.jpeg
 │
-├── Optimization & Training
-│ ├── Batch_vs_stochastic_GD.ipynb
-│ ├── Optimizers.ipynb
-│ ├── EWMA.ipynb
-│ ├── feature_scaling.ipynb
-│ ├── Xavier_and_He.ipynb
-│ ├── batch_norm_example.ipynb
-│ └── vanishing_gradient.ipynb
+├── visualizations/
+│   ├── dataset visualizations
+│   ├── repository-overview.svg
+│   └── learning-coverage.svg
 │
-├── ️ Generalization & Architecture
-│ ├── regularizationNN.ipynb
-│ ├── dropout_classification.ipynb
-│ ├── early_stopping.ipynb
-│ ├── HyperParamterTuning.ipynb
-│ └── Functional API notebooks
+├── scripts/
+│   └── validate_repository.py
 │
-├── ️ CNN & Computer Vision
-│ ├── CNN_from_scratch.ipynb
-│ ├── pooling_CNN.ipynb
-│ ├── padding_and_strides_CNN.ipynb
-│ ├── LENET5_CNN.ipynb
-│ ├── ImageClassifierCNN.ipynb
-│ └── ImageDataGenerator.ipynb
+├── .github/
+│   └── workflows/
+│       └── validate-repository.yml
 │
-├── Transfer Learning
-│ ├── transfer_learning_VGG16.ipynb
-│ └── pre_trained_imagenet_and_plots.ipynb
-│
-├── Applied Deep Learning
-│ ├── MNIST_digits_MLP.ipynb
-│ ├── Regression_MLP.ipynb
-│ └── CustomerChurnPredictionMLP.ipynb
-│
-├── Datasets
-│ └── 8 CSV files
-│
-├── ️ Image Assets
-│ └── 2 image files
-│
+├── requirements.txt
 ├── LICENSE
 └── README.md
-~~~
+```
+
+The README provides the conceptual organization while the physical repository remains intentionally simple, so every notebook can be opened directly from GitHub or Google Colab.
 
 ---
 
@@ -604,6 +702,17 @@ That makes the repository useful for:
 ---
 
 # Quick Navigation
+
+| I want to... | Start here |
+|:---|:---|
+| Follow the complete learning path | [What You Will Learn](#what-you-will-learn) |
+| Understand the datasets | [Dataset Directory](#dataset-directory) |
+| Reproduce the environment | [Reproducibility](#reproducibility) |
+| Understand the notebook standard | [Notebook Quality Standard](#notebook-quality-standard) |
+| See experiment areas | [Experiments & Results](#experiments--results) |
+| Check repository automation | [Repository Engineering](#repository-engineering) |
+
+
 
 | I want to learn... | Start here |
 |:---|:---|
@@ -671,4 +780,4 @@ feel free to open an issue or submit a pull request.
 
 ---
 
-<sub>Repository inventory verified against the current main branch on September 20, 2026.</sub>
+<sub>Repository inventory and documentation verified against the current main branch on September 20, 2026.</sub>
