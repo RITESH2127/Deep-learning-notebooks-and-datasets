@@ -1,197 +1,197 @@
 <!--
-  Visual-first README for GitHub.
-  Inventory verified against the main branch.
+ Visual-first README for GitHub.
+ Inventory verified against the main branch.
 -->
 
 <div align="center">
 
-# 🧠 Deep Learning Notebooks & Datasets
+# Deep Learning Notebooks & Datasets
 
 ### A visual, hands-on deep learning laboratory — from the perceptron to CNNs, transfer learning, optimization, and applied neural networks.
 
 <p>
-  <a href="https://github.com/RITESH2127/Deep-learning-notebooks-and-datasets">
-    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository">
-  </a>
-  <img src="https://img.shields.io/badge/Notebooks-31-FF6F00?style=for-the-badge&logo=jupyter" alt="31 Jupyter notebooks">
-  <img src="https://img.shields.io/badge/Datasets-8-2E7D32?style=for-the-badge&logo=databricks" alt="8 datasets">
-  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/TensorFlow%20%2F%20Keras-Deep%20Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow and Keras">
-  <img src="https://img.shields.io/badge/License-MIT-0A7BBB?style=for-the-badge" alt="MIT License">
+ <a href="https://github.com/RITESH2127/Deep-learning-notebooks-and-datasets">
+ <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository">
+ </a>
+ <img src="https://img.shields.io/badge/Notebooks-31-FF6F00?style=for-the-badge&logo=jupyter" alt="31 Jupyter notebooks">
+ <img src="https://img.shields.io/badge/Datasets-8-2E7D32?style=for-the-badge&logo=databricks" alt="8 datasets">
+ <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+ <img src="https://img.shields.io/badge/TensorFlow%20%2F%20Keras-Deep%20Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow and Keras">
+ <img src="https://img.shields.io/badge/License-MIT-0A7BBB?style=for-the-badge" alt="MIT License">
 </p>
 
 <p>
-  <strong>43 repository files</strong> · <strong>31 notebooks</strong> · <strong>8 datasets</strong> · <strong>2 image assets</strong>
+ <strong>43 repository files</strong> | <strong>31 notebooks</strong> | <strong>8 datasets</strong> | <strong>2 image assets</strong>
 </p>
 
 <p>
-  <a href="#-learning-architecture">Learning Architecture</a> ·
-  <a href="#-notebook-atlas">Notebook Atlas</a> ·
-  <a href="#-datasets">Datasets</a> ·
-  <a href="#-run-it">Run It</a> ·
-  <a href="#-repository-philosophy">Philosophy</a>
+ <a href="#-learning-architecture">Learning Architecture</a> |
+ <a href="#-notebook-atlas">Notebook Atlas</a> |
+ <a href="#-datasets">Datasets</a> |
+ <a href="#-run-it">Run It</a> |
+ <a href="#-repository-philosophy">Philosophy</a>
 </p>
 
 </div>
 
 ---
 
-## ⚡ What is this repository?
+## What is this repository?
 
 This repository is a **hands-on deep learning laboratory** built around executable Jupyter notebooks and supporting datasets.
 
 Instead of treating deep learning as a collection of black-box APIs, the notebooks explore the ideas that make neural networks work:
 
-- 🧩 **Neural-network fundamentals**
-- 📉 **Gradient descent and optimization**
-- ⚙️ **Initialization and training dynamics**
-- 🛡️ **Regularization and generalization**
-- 🧠 **Multilayer perceptrons**
-- 👁️ **Convolutional neural networks**
-- 🖼️ **Image classification and augmentation**
-- 🔄 **Transfer learning**
-- 🏗️ **Functional neural-network architectures**
-- 📊 **Applied machine-learning workflows**
+- **Neural-network fundamentals**
+- **Gradient descent and optimization**
+- ️ **Initialization and training dynamics**
+- ️ **Regularization and generalization**
+- **Multilayer perceptrons**
+- ️ **Convolutional neural networks**
+- ️ **Image classification and augmentation**
+- **Transfer learning**
+- ️ **Functional neural-network architectures**
+- **Applied machine-learning workflows**
 
-> **Learning principle:** understand the mechanism → implement it → visualize its behavior → use it in a model.
+> **Learning principle:** understand the mechanism -> implement it -> visualize its behavior -> use it in a model.
 
 ---
 
-## 📊 Repository at a glance
+## Repository at a glance
 
 | Component | Current contents |
 |:---|---:|
-| 🧪 Jupyter notebooks | **31** |
-| 🗂️ CSV datasets | **8** |
-| 🖼️ Image assets | **2** |
-| 📦 Total tracked files | **43** |
-| 🧠 Core learning tracks | **6+** |
-| 🛠️ Primary ecosystem | **Python + TensorFlow/Keras + NumPy** |
+| Jupyter notebooks | **31** |
+| ️ CSV datasets | **8** |
+| ️ Image assets | **2** |
+| Total tracked files | **43** |
+| Core learning tracks | **6+** |
+| ️ Primary ecosystem | **Python + TensorFlow/Keras + NumPy** |
 
 ### The learning curve
 
-**Foundations** → **Optimization** → **Training** → **Generalization** → **CNNs** → **Transfer Learning** → **Applied Deep Learning**
+**Foundations** -> **Optimization** -> **Training** -> **Generalization** -> **CNNs** -> **Transfer Learning** -> **Applied Deep Learning**
 
 ---
 
-## 🗺️ Learning Architecture
+## ️ Learning Architecture
 
 ~~~mermaid
 flowchart LR
-    A["🟦 Foundations<br/>Perceptron<br/>Neural Network<br/>Backpropagation"]
-    B["🟨 Optimization<br/>Gradient Descent<br/>Optimizers<br/>EWMA"]
-    C["🟩 Training Dynamics<br/>Scaling<br/>Xavier / He<br/>Batch Normalization"]
-    D["🟪 Generalization<br/>Regularization<br/>Dropout<br/>Early Stopping"]
-    E["🟥 Computer Vision<br/>CNN<br/>Pooling<br/>Padding<br/>LeNet-5"]
-    F["🟧 Modern Vision<br/>Image Classification<br/>Augmentation<br/>VGG16<br/>ImageNet"]
-    G["⬛ Applied Models<br/>MNIST<br/>Regression<br/>Customer Churn"]
+ A[" Foundations<br/>Perceptron<br/>Neural Network<br/>Backpropagation"]
+ B[" Optimization<br/>Gradient Descent<br/>Optimizers<br/>EWMA"]
+ C[" Training Dynamics<br/>Scaling<br/>Xavier / He<br/>Batch Normalization"]
+ D[" Generalization<br/>Regularization<br/>Dropout<br/>Early Stopping"]
+ E[" Computer Vision<br/>CNN<br/>Pooling<br/>Padding<br/>LeNet-5"]
+ F[" Modern Vision<br/>Image Classification<br/>Augmentation<br/>VGG16<br/>ImageNet"]
+ G[" Applied Models<br/>MNIST<br/>Regression<br/>Customer Churn"]
 
-    A --> B --> C --> D --> E --> F
-    D --> G
-    E --> G
-    F --> G
+ A --> B --> C --> D --> E --> F
+ D --> G
+ E --> G
+ F --> G
 ~~~
 
 ---
 
-## 🧭 The learning tracks
+## The learning tracks
 
 | Track | What you learn | Representative notebooks |
 |:---|:---|:---|
-| **01 · Foundations** | Perceptrons, neural networks, backpropagation | Perceptron, neural_network_scratch, backpropagation_* |
-| **02 · Optimization** | Gradient descent, optimizers, EWMA, optimization geometry | Batch_vs_stochastic_GD, Optimizers, EWMA |
-| **03 · Training** | Scaling, initialization, batch normalization, gradient behavior | feature_scaling, Xavier_and_He, batch_norm_example |
-| **04 · Generalization** | Regularization, dropout, early stopping, hyperparameter tuning | regularizationNN, dropout_classification, early_stopping |
-| **05 · Vision** | Convolution, pooling, padding, strides, CNN architectures | CNN_from_scratch, LENET5_CNN, ImageClassifierCNN |
-| **06 · Transfer & Applied DL** | VGG16, ImageNet, MLP applications and functional APIs | transfer_learning_VGG16, pre_trained_imagenet_and_plots |
+| **01 | Foundations** | Perceptrons, neural networks, backpropagation | Perceptron, neural_network_scratch, backpropagation_* |
+| **02 | Optimization** | Gradient descent, optimizers, EWMA, optimization geometry | Batch_vs_stochastic_GD, Optimizers, EWMA |
+| **03 | Training** | Scaling, initialization, batch normalization, gradient behavior | feature_scaling, Xavier_and_He, batch_norm_example |
+| **04 | Generalization** | Regularization, dropout, early stopping, hyperparameter tuning | regularizationNN, dropout_classification, early_stopping |
+| **05 | Vision** | Convolution, pooling, padding, strides, CNN architectures | CNN_from_scratch, LENET5_CNN, ImageClassifierCNN |
+| **06 | Transfer & Applied DL** | VGG16, ImageNet, MLP applications and functional APIs | transfer_learning_VGG16, pre_trained_imagenet_and_plots |
 
 ---
 
-# 📚 Notebook Atlas
+# Notebook Atlas
 
 > **Tip:** Every notebook can be opened directly from the tables below. The **Colab** links use the repository's current main branch.
 
-## 01 · Neural Network Foundations
+## 01 | Neural Network Foundations
 
 | Notebook | What it explores | Launch |
 |:---|:---|:---:|
-| [Perceptron.ipynb](./Perceptron.ipynb) | Single-neuron classification and perceptron learning | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/Perceptron.ipynb) |
-| [Problem_with_perceptron.ipynb](./Problem_with_perceptron.ipynb) | Where a single perceptron breaks down | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/Problem_with_perceptron.ipynb) |
-| [neural_network_scratch.ipynb](./neural_network_scratch.ipynb) | Neural-network mechanics without hiding the fundamentals | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/neural_network_scratch.ipynb) |
-| [backpropagation_classification.ipynb](./backpropagation_classification.ipynb) | Backpropagation for classification | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/backpropagation_classification.ipynb) |
-| [backpropagation_regression.ipynb](./backpropagation_regression.ipynb) | Backpropagation for regression | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/backpropagation_regression.ipynb) |
+| [Perceptron.ipynb](./Perceptron.ipynb) | Single-neuron classification and perceptron learning | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/Perceptron.ipynb) |
+| [Problem_with_perceptron.ipynb](./Problem_with_perceptron.ipynb) | Where a single perceptron breaks down | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/Problem_with_perceptron.ipynb) |
+| [neural_network_scratch.ipynb](./neural_network_scratch.ipynb) | Neural-network mechanics without hiding the fundamentals | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/neural_network_scratch.ipynb) |
+| [backpropagation_classification.ipynb](./backpropagation_classification.ipynb) | Backpropagation for classification | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/backpropagation_classification.ipynb) |
+| [backpropagation_regression.ipynb](./backpropagation_regression.ipynb) | Backpropagation for regression | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/backpropagation_regression.ipynb) |
 
 ---
 
-## 02 · Optimization & Gradient Descent
+## 02 | Optimization & Gradient Descent
 
 | Notebook | What it explores | Launch |
 |:---|:---|:---:|
-| [Batch_vs_stochastic_GD.ipynb](./Batch_vs_stochastic_GD.ipynb) | Batch vs. stochastic gradient descent | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/Batch_vs_stochastic_GD.ipynb) |
-| [Optimizers.ipynb](./Optimizers.ipynb) | Optimization strategies used during neural-network training | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/Optimizers.ipynb) |
-| [EWMA.ipynb](./EWMA.ipynb) | Exponentially weighted moving averages | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/EWMA.ipynb) |
-| [elongated_bowl_problem.ipynb](./elongated_bowl_problem.ipynb) | Intuition for optimization landscapes and gradient-based movement | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/elongated_bowl_problem.ipynb) |
+| [Batch_vs_stochastic_GD.ipynb](./Batch_vs_stochastic_GD.ipynb) | Batch vs. stochastic gradient descent | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/Batch_vs_stochastic_GD.ipynb) |
+| [Optimizers.ipynb](./Optimizers.ipynb) | Optimization strategies used during neural-network training | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/Optimizers.ipynb) |
+| [EWMA.ipynb](./EWMA.ipynb) | Exponentially weighted moving averages | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/EWMA.ipynb) |
+| [elongated_bowl_problem.ipynb](./elongated_bowl_problem.ipynb) | Intuition for optimization landscapes and gradient-based movement | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/elongated_bowl_problem.ipynb) |
 
 ---
 
-## 03 · Training Dynamics
+## 03 | Training Dynamics
 
 | Notebook | What it explores | Launch |
 |:---|:---|:---:|
-| [feature_scaling.ipynb](./feature_scaling.ipynb) | Why input scaling matters during training | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/feature_scaling.ipynb) |
-| [Xavier_and_He.ipynb](./Xavier_and_He.ipynb) | Xavier and He weight initialization | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/Xavier_and_He.ipynb) |
-| [batch_norm_example.ipynb](./batch_norm_example.ipynb) | Batch normalization in neural networks | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/batch_norm_example.ipynb) |
-| [vanishing_gradient.ipynb](./vanishing_gradient.ipynb) | Vanishing-gradient behavior | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/vanishing_gradient.ipynb) |
-| [zero_initialization_sigmoid.ipynb](./zero_initialization_sigmoid.ipynb) | Zero initialization and sigmoid-based training behavior | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/zero_initialization_sigmoid.ipynb) |
+| [feature_scaling.ipynb](./feature_scaling.ipynb) | Why input scaling matters during training | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/feature_scaling.ipynb) |
+| [Xavier_and_He.ipynb](./Xavier_and_He.ipynb) | Xavier and He weight initialization | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/Xavier_and_He.ipynb) |
+| [batch_norm_example.ipynb](./batch_norm_example.ipynb) | Batch normalization in neural networks | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/batch_norm_example.ipynb) |
+| [vanishing_gradient.ipynb](./vanishing_gradient.ipynb) | Vanishing-gradient behavior | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/vanishing_gradient.ipynb) |
+| [zero_initialization_sigmoid.ipynb](./zero_initialization_sigmoid.ipynb) | Zero initialization and sigmoid-based training behavior | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/zero_initialization_sigmoid.ipynb) |
 
 ---
 
-## 04 · Regularization & Model Design
+## 04 | Regularization & Model Design
 
 | Notebook | What it explores | Launch |
 |:---|:---|:---:|
-| [regularizationNN.ipynb](./regularizationNN.ipynb) | Regularization techniques for neural networks | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/regularizationNN.ipynb) |
-| [dropout_classification.ipynb](./dropout_classification.ipynb) | Dropout for classification | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/dropout_classification.ipynb) |
-| [early_stopping.ipynb](./early_stopping.ipynb) | Early stopping as a training-control technique | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/early_stopping.ipynb) |
-| [HyperParamterTuning.ipynb](./HyperParamterTuning.ipynb) | Hyperparameter experimentation and model tuning | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/HyperParamterTuning.ipynb) |
-| [functional_api_demo.ipynb](./functional_api_demo.ipynb) | Keras Functional API | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/functional_api_demo.ipynb) |
-| [non_sequential_model_functionalAPI.ipynb](./non_sequential_model_functionalAPI.ipynb) | Non-sequential model construction | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/non_sequential_model_functionalAPI.ipynb) |
+| [regularizationNN.ipynb](./regularizationNN.ipynb) | Regularization techniques for neural networks | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/regularizationNN.ipynb) |
+| [dropout_classification.ipynb](./dropout_classification.ipynb) | Dropout for classification | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/dropout_classification.ipynb) |
+| [early_stopping.ipynb](./early_stopping.ipynb) | Early stopping as a training-control technique | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/early_stopping.ipynb) |
+| [HyperParamterTuning.ipynb](./HyperParamterTuning.ipynb) | Hyperparameter experimentation and model tuning | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/HyperParamterTuning.ipynb) |
+| [functional_api_demo.ipynb](./functional_api_demo.ipynb) | Keras Functional API | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/functional_api_demo.ipynb) |
+| [non_sequential_model_functionalAPI.ipynb](./non_sequential_model_functionalAPI.ipynb) | Non-sequential model construction | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/non_sequential_model_functionalAPI.ipynb) |
 
 ---
 
-## 05 · Convolutional Neural Networks
+## 05 | Convolutional Neural Networks
 
 | Notebook | What it explores | Launch |
 |:---|:---|:---:|
-| [CNN_from_scratch.ipynb](./CNN_from_scratch.ipynb) | CNN mechanics implemented from the ground up | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/CNN_from_scratch.ipynb) |
-| [padding_and_strides_CNN.ipynb](./padding_and_strides_CNN.ipynb) | Padding and stride behavior | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/padding_and_strides_CNN.ipynb) |
-| [pooling_CNN.ipynb](./pooling_CNN.ipynb) | Pooling operations | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/pooling_CNN.ipynb) |
-| [LENET5_CNN.ipynb](./LENET5_CNN.ipynb) | LeNet-5 architecture | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/LENET5_CNN.ipynb) |
-| [ImageClassifierCNN.ipynb](./ImageClassifierCNN.ipynb) | CNN-based image classification workflow | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/ImageClassifierCNN.ipynb) |
-| [ImageDataGenerator.ipynb](./ImageDataGenerator.ipynb) | Image data generation and augmentation | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/ImageDataGenerator.ipynb) |
+| [CNN_from_scratch.ipynb](./CNN_from_scratch.ipynb) | CNN mechanics implemented from the ground up | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/CNN_from_scratch.ipynb) |
+| [padding_and_strides_CNN.ipynb](./padding_and_strides_CNN.ipynb) | Padding and stride behavior | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/padding_and_strides_CNN.ipynb) |
+| [pooling_CNN.ipynb](./pooling_CNN.ipynb) | Pooling operations | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/pooling_CNN.ipynb) |
+| [LENET5_CNN.ipynb](./LENET5_CNN.ipynb) | LeNet-5 architecture | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/LENET5_CNN.ipynb) |
+| [ImageClassifierCNN.ipynb](./ImageClassifierCNN.ipynb) | CNN-based image classification workflow | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/ImageClassifierCNN.ipynb) |
+| [ImageDataGenerator.ipynb](./ImageDataGenerator.ipynb) | Image data generation and augmentation | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/ImageDataGenerator.ipynb) |
 
 ---
 
-## 06 · Transfer Learning & Pretrained Models
+## 06 | Transfer Learning & Pretrained Models
 
 | Notebook | What it explores | Launch |
 |:---|:---|:---:|
-| [transfer_learning_VGG16.ipynb](./transfer_learning_VGG16.ipynb) | Transfer learning with VGG16 | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/transfer_learning_VGG16.ipynb) |
-| [pre_trained_imagenet_and_plots.ipynb](./pre_trained_imagenet_and_plots.ipynb) | Pretrained ImageNet models and visual analysis | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/pre_trained_imagenet_and_plots.ipynb) |
+| [transfer_learning_VGG16.ipynb](./transfer_learning_VGG16.ipynb) | Transfer learning with VGG16 | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/transfer_learning_VGG16.ipynb) |
+| [pre_trained_imagenet_and_plots.ipynb](./pre_trained_imagenet_and_plots.ipynb) | Pretrained ImageNet models and visual analysis | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/pre_trained_imagenet_and_plots.ipynb) |
 
 ---
 
-## 07 · Applied Neural Networks
+## 07 | Applied Neural Networks
 
 | Notebook | What it explores | Launch |
 |:---|:---|:---:|
-| [MNIST_digits_MLP.ipynb](./MNIST_digits_MLP.ipynb) | MLP-based handwritten-digit classification | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/MNIST_digits_MLP.ipynb) |
-| [Regression_MLP.ipynb](./Regression_MLP.ipynb) | MLP for regression | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/Regression_MLP.ipynb) |
-| [CustomerChurnPredictionMLP.ipynb](./CustomerChurnPredictionMLP.ipynb) | Customer churn prediction using an MLP | [▶ Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/CustomerChurnPredictionMLP.ipynb) |
+| [MNIST_digits_MLP.ipynb](./MNIST_digits_MLP.ipynb) | MLP-based handwritten-digit classification | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/MNIST_digits_MLP.ipynb) |
+| [Regression_MLP.ipynb](./Regression_MLP.ipynb) | MLP for regression | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/Regression_MLP.ipynb) |
+| [CustomerChurnPredictionMLP.ipynb](./CustomerChurnPredictionMLP.ipynb) | Customer churn prediction using an MLP | [Open Colab](https://colab.research.google.com/github/RITESH2127/Deep-learning-notebooks-and-datasets/blob/main/CustomerChurnPredictionMLP.ipynb) |
 
 ---
 
-## 🧪 Dataset Lab
+## Dataset Lab
 
 The repository currently contains **8 CSV datasets** used across experiments.
 
@@ -210,7 +210,7 @@ The repository currently contains **8 CSV datasets** used across experiments.
 
 ---
 
-## 🖼️ Visual Assets
+## ️ Visual Assets
 
 The repository also contains two image assets used by selected notebooks:
 
@@ -219,89 +219,89 @@ The repository also contains two image assets used by selected notebooks:
 
 ---
 
-# 🧠 Concept Map
+# Concept Map
 
 ~~~mermaid
 mindmap
-  root((Deep Learning Lab))
-    Foundations
-      Perceptron
-      Neural Network
-      Backpropagation
-    Optimization
-      Gradient Descent
-      Optimizers
-      EWMA
-      Optimization Geometry
-    Training
-      Feature Scaling
-      Xavier Initialization
-      He Initialization
-      Batch Normalization
-      Vanishing Gradients
-    Generalization
-      Regularization
-      Dropout
-      Early Stopping
-      Hyperparameter Tuning
-    Architectures
-      Sequential
-      Functional API
-      Non-Sequential Models
-    Computer Vision
-      Convolution
-      Pooling
-      Padding
-      Strides
-      LeNet-5
-      Image Classification
-      Data Generation
-    Transfer Learning
-      VGG16
-      ImageNet
-    Applications
-      MNIST
-      Regression
-      Customer Churn
+ root((Deep Learning Lab))
+ Foundations
+ Perceptron
+ Neural Network
+ Backpropagation
+ Optimization
+ Gradient Descent
+ Optimizers
+ EWMA
+ Optimization Geometry
+ Training
+ Feature Scaling
+ Xavier Initialization
+ He Initialization
+ Batch Normalization
+ Vanishing Gradients
+ Generalization
+ Regularization
+ Dropout
+ Early Stopping
+ Hyperparameter Tuning
+ Architectures
+ Sequential
+ Functional API
+ Non-Sequential Models
+ Computer Vision
+ Convolution
+ Pooling
+ Padding
+ Strides
+ LeNet-5
+ Image Classification
+ Data Generation
+ Transfer Learning
+ VGG16
+ ImageNet
+ Applications
+ MNIST
+ Regression
+ Customer Churn
 ~~~
 
 ---
 
-# 🔬 From intuition to implementation
+# From intuition to implementation
 
-A major theme of the repository is moving from **concept → experiment → model**.
+A major theme of the repository is moving from **concept -> experiment -> model**.
 
 ~~~text
-             ┌─────────────────────┐
-             │  Mathematical idea  │
-             └──────────┬──────────┘
-                        ↓
-             ┌─────────────────────┐
-             │  Small experiment   │
-             └──────────┬──────────┘
-                        ↓
-             ┌─────────────────────┐
-             │ Visualize behavior  │
-             └──────────┬──────────┘
-                        ↓
-             ┌─────────────────────┐
-             │ Build neural model  │
-             └──────────┬──────────┘
-                        ↓
-             ┌─────────────────────┐
-             │ Apply to real data  │
-             └─────────────────────┘
+ ┌─────────────────────┐
+ │ Mathematical idea │
+ └──────────┬──────────┘
+ v
+ ┌─────────────────────┐
+ │ Small experiment │
+ └──────────┬──────────┘
+ v
+ ┌─────────────────────┐
+ │ Visualize behavior │
+ └──────────┬──────────┘
+ v
+ ┌─────────────────────┐
+ │ Build neural model │
+ └──────────┬──────────┘
+ v
+ ┌─────────────────────┐
+ │ Apply to real data │
+ └─────────────────────┘
 ~~~
 
 This makes the collection useful not only as a code archive, but also as a **study and revision system**.
 
 ---
 
-# 🚀 Run It
+# Run It
 
 ## Option A — Google Colab
 
-Choose a notebook above and click its **▶ Colab** link.
+Choose a notebook above and click its **Open Colab** link.
 
 No local environment is required for the basic notebook workflow.
 
@@ -353,7 +353,7 @@ Then open the notebook you want to explore.
 
 ---
 
-# 🧰 Technology Stack
+# Technology Stack
 
 | Layer | Technologies |
 |:---|:---|
@@ -368,73 +368,73 @@ Then open the notebook you want to explore.
 
 ---
 
-# 🎯 Recommended Learning Route
+# Recommended Learning Route
 
 If you are learning deep learning from the beginning, follow this progression rather than jumping randomly.
 
 ### Phase 1 — Understand the neuron
 
-**Perceptron**  
-↓  
-**Problem with perceptron**  
-↓  
+**Perceptron**
+v
+**Problem with perceptron**
+v
 **Neural network from scratch**
 
 ### Phase 2 — Learn how models learn
 
-**Backpropagation**  
-↓  
-**Gradient descent**  
-↓  
+**Backpropagation**
+v
+**Gradient descent**
+v
 **Optimizers**
 
 ### Phase 3 — Understand training behavior
 
-**Feature scaling**  
-↓  
-**Xavier / He initialization**  
-↓  
-**Batch normalization**  
-↓  
+**Feature scaling**
+v
+**Xavier / He initialization**
+v
+**Batch normalization**
+v
 **Vanishing gradients**
 
 ### Phase 4 — Control overfitting
 
-**Regularization**  
-↓  
-**Dropout**  
-↓  
-**Early stopping**  
-↓  
+**Regularization**
+v
+**Dropout**
+v
+**Early stopping**
+v
 **Hyperparameter tuning**
 
 ### Phase 5 — Enter computer vision
 
-**Padding & strides**  
-↓  
-**Pooling**  
-↓  
-**CNN from scratch**  
-↓  
-**LeNet-5**  
-↓  
-**Image classification**  
-↓  
+**Padding & strides**
+v
+**Pooling**
+v
+**CNN from scratch**
+v
+**LeNet-5**
+v
+**Image classification**
+v
 **Image data generation**
 
 ### Phase 6 — Use pretrained representations
 
-**VGG16 transfer learning**  
-↓  
+**VGG16 transfer learning**
+v
 **ImageNet pretrained models**
 
 ### Phase 7 — Build applied models
 
-**MNIST** · **Regression** · **Customer Churn**
+**MNIST** | **Regression** | **Customer Churn**
 
 ---
 
-# 📈 What you can learn
+# What you can learn
 
 By working through the collection, you can build practical understanding of:
 
@@ -464,84 +464,84 @@ By working through the collection, you can build practical understanding of:
 
 ---
 
-# 🧩 Repository Design
+# Repository Design
 
 ~~~mermaid
 flowchart TB
-    R["📦 Repository"]
+ R[" Repository"]
 
-    R --> N["📓 31 Notebooks"]
-    R --> D["📊 8 CSV Datasets"]
-    R --> I["🖼️ 2 Image Assets"]
+ R --> N[" 31 Notebooks"]
+ R --> D[" 8 CSV Datasets"]
+ R --> I["️ 2 Image Assets"]
 
-    N --> F["Foundations"]
-    N --> O["Optimization"]
-    N --> T["Training Dynamics"]
-    N --> G["Generalization"]
-    N --> C["CNN / Vision"]
-    N --> P["Pretrained Models"]
-    N --> A["Applied Models"]
+ N --> F["Foundations"]
+ N --> O["Optimization"]
+ N --> T["Training Dynamics"]
+ N --> G["Generalization"]
+ N --> C["CNN / Vision"]
+ N --> P["Pretrained Models"]
+ N --> A["Applied Models"]
 
-    F --> O
-    O --> T
-    T --> G
-    G --> C
-    C --> P
-    C --> A
-    P --> A
+ F --> O
+ O --> T
+ T --> G
+ G --> C
+ C --> P
+ C --> A
+ P --> A
 ~~~
 
 ---
 
-# 🏗️ Repository Structure
+# ️ Repository Structure
 
 ~~~text
 Deep-learning-notebooks-and-datasets/
 │
-├── 🧠 Foundations
-│   ├── Perceptron.ipynb
-│   ├── Problem_with_perceptron.ipynb
-│   ├── neural_network_scratch.ipynb
-│   └── backpropagation_*.ipynb
+├── Foundations
+│ ├── Perceptron.ipynb
+│ ├── Problem_with_perceptron.ipynb
+│ ├── neural_network_scratch.ipynb
+│ └── backpropagation_*.ipynb
 │
-├── 📉 Optimization & Training
-│   ├── Batch_vs_stochastic_GD.ipynb
-│   ├── Optimizers.ipynb
-│   ├── EWMA.ipynb
-│   ├── feature_scaling.ipynb
-│   ├── Xavier_and_He.ipynb
-│   ├── batch_norm_example.ipynb
-│   └── vanishing_gradient.ipynb
+├── Optimization & Training
+│ ├── Batch_vs_stochastic_GD.ipynb
+│ ├── Optimizers.ipynb
+│ ├── EWMA.ipynb
+│ ├── feature_scaling.ipynb
+│ ├── Xavier_and_He.ipynb
+│ ├── batch_norm_example.ipynb
+│ └── vanishing_gradient.ipynb
 │
-├── 🛡️ Generalization & Architecture
-│   ├── regularizationNN.ipynb
-│   ├── dropout_classification.ipynb
-│   ├── early_stopping.ipynb
-│   ├── HyperParamterTuning.ipynb
-│   └── Functional API notebooks
+├── ️ Generalization & Architecture
+│ ├── regularizationNN.ipynb
+│ ├── dropout_classification.ipynb
+│ ├── early_stopping.ipynb
+│ ├── HyperParamterTuning.ipynb
+│ └── Functional API notebooks
 │
-├── 👁️ CNN & Computer Vision
-│   ├── CNN_from_scratch.ipynb
-│   ├── pooling_CNN.ipynb
-│   ├── padding_and_strides_CNN.ipynb
-│   ├── LENET5_CNN.ipynb
-│   ├── ImageClassifierCNN.ipynb
-│   └── ImageDataGenerator.ipynb
+├── ️ CNN & Computer Vision
+│ ├── CNN_from_scratch.ipynb
+│ ├── pooling_CNN.ipynb
+│ ├── padding_and_strides_CNN.ipynb
+│ ├── LENET5_CNN.ipynb
+│ ├── ImageClassifierCNN.ipynb
+│ └── ImageDataGenerator.ipynb
 │
-├── 🔄 Transfer Learning
-│   ├── transfer_learning_VGG16.ipynb
-│   └── pre_trained_imagenet_and_plots.ipynb
+├── Transfer Learning
+│ ├── transfer_learning_VGG16.ipynb
+│ └── pre_trained_imagenet_and_plots.ipynb
 │
-├── 📊 Applied Deep Learning
-│   ├── MNIST_digits_MLP.ipynb
-│   ├── Regression_MLP.ipynb
-│   └── CustomerChurnPredictionMLP.ipynb
+├── Applied Deep Learning
+│ ├── MNIST_digits_MLP.ipynb
+│ ├── Regression_MLP.ipynb
+│ └── CustomerChurnPredictionMLP.ipynb
 │
-├── 📁 Datasets
-│   └── 8 CSV files
+├── Datasets
+│ └── 8 CSV files
 │
-├── 🖼️ Image Assets
-│   └── 2 image files
+├── ️ Image Assets
+│ └── 2 image files
 │
 ├── LICENSE
 └── README.md
@@ -549,7 +549,7 @@ Deep-learning-notebooks-and-datasets/
 
 ---
 
-# 💡 Repository Philosophy
+# Repository Philosophy
 
 > **Don't just learn how to use a model. Learn what the model is doing.**
 
@@ -557,16 +557,16 @@ The notebooks cover both **low-level intuition** and **higher-level frameworks**
 
 That makes the repository useful for:
 
-- 🎓 Students learning deep learning
-- 🧑‍💻 Developers building ML foundations
-- 🧪 Experimentation and rapid prototyping
-- 📚 Exam and interview revision
-- 🔬 Understanding neural-network internals
-- 🧠 Revisiting important deep-learning concepts
+- Students learning deep learning
+- ‍ Developers building ML foundations
+- Experimentation and rapid prototyping
+- Exam and interview revision
+- Understanding neural-network internals
+- Revisiting important deep-learning concepts
 
 ---
 
-# 🔎 Quick Navigation
+# Quick Navigation
 
 | I want to learn... | Start here |
 |:---|:---|
@@ -592,7 +592,7 @@ That makes the repository useful for:
 
 ---
 
-# 🤝 Contributions
+# Contributions
 
 This repository is primarily a personal learning laboratory, but improvements are welcome.
 
@@ -608,16 +608,16 @@ feel free to open an issue or submit a pull request.
 
 ---
 
-# 👤 Author
+# Author
 
 <div align="center">
 
 ### Ritesh Kumar
 
-**Computer Science Engineering · Machine Learning · AI · Data Science**
+**Computer Science Engineering | Machine Learning | AI | Data Science**
 
 <a href="https://github.com/RITESH2127">
-  <img src="https://img.shields.io/badge/GitHub-RITESH2127-181717?style=for-the-badge&logo=github" alt="Ritesh Kumar on GitHub">
+ <img src="https://img.shields.io/badge/GitHub-RITESH2127-181717?style=for-the-badge&logo=github" alt="Ritesh Kumar on GitHub">
 </a>
 
 </div>
@@ -626,9 +626,9 @@ feel free to open an issue or submit a pull request.
 
 <div align="center">
 
-### ⭐ If this repository helps you understand deep learning, consider starring it.
+### If this repository helps you understand deep learning, consider starring it.
 
-**Learn → Experiment → Visualize → Build → Repeat**
+**Learn -> Experiment -> Visualize -> Build -> Repeat**
 
 </div>
 
