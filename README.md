@@ -269,83 +269,72 @@ The repository also contains two image assets used by selected notebooks:
 
 # Concept Map
 
-~~~mermaid
-mindmap
- root((Deep Learning Lab))
- Foundations
- Perceptron
- Neural Network
- Backpropagation
- Optimization
- Gradient Descent
- Optimizers
- EWMA
- Optimization Geometry
- Training
- Feature Scaling
- Xavier Initialization
- He Initialization
- Batch Normalization
- Vanishing Gradients
- Generalization
- Regularization
- Dropout
- Early Stopping
- Hyperparameter Tuning
- Architectures
- Sequential
- Functional API
- Non-Sequential Models
- Computer Vision
- Convolution
- Pooling
- Padding
- Strides
- LeNet-5
- Image Classification
- Data Generation
- Transfer Learning
- VGG16
- ImageNet
- Applications
- MNIST
- Regression
- Customer Churn
-~~~
+The repository uses a GitHub-compatible Mermaid flowchart instead of a Mermaid mindmap. This avoids the rendering issue caused by unindented sibling nodes and gives each concept an explicit parent relationship.
 
----
+```mermaid
+flowchart TD
+    A["Deep Learning Lab"]
 
-# From intuition to implementation
+    A --> B["Foundations"]
+    B --> B1["Perceptron"]
+    B --> B2["Neural Network"]
+    B --> B3["Backpropagation"]
 
-A major theme of the repository is moving from **concept -> experiment -> model**.
+    A --> C["Optimization"]
+    C --> C1["Gradient Descent"]
+    C --> C2["Optimizers"]
+    C --> C3["EWMA"]
+    C --> C4["Optimization Geometry"]
 
-~~~text
- ┌─────────────────────┐
- │ Mathematical idea │
- └──────────┬──────────┘
- v
- ┌─────────────────────┐
- │ Small experiment │
- └──────────┬──────────┘
- v
- ┌─────────────────────┐
- │ Visualize behavior │
- └──────────┬──────────┘
- v
- ┌─────────────────────┐
- │ Build neural model │
- └──────────┬──────────┘
- v
- ┌─────────────────────┐
- │ Apply to real data │
- └─────────────────────┘
-~~~
+    A --> D["Training Dynamics"]
+    D --> D1["Feature Scaling"]
+    D --> D2["Xavier Initialization"]
+    D --> D3["He Initialization"]
+    D --> D4["Batch Normalization"]
+    D --> D5["Vanishing Gradients"]
+    D --> D6["Zero Initialization"]
 
-This makes the collection useful not only as a code archive, but also as a **study and revision system**.
+    A --> E["Generalization and Model Design"]
+    E --> E1["Regularization"]
+    E --> E2["Dropout"]
+    E --> E3["Early Stopping"]
+    E --> E4["Hyperparameter Tuning"]
+    E --> E5["Sequential Models"]
+    E --> E6["Functional API"]
+    E --> E7["Non-Sequential Models"]
 
----
+    A --> F["Computer Vision"]
+    F --> F1["Convolution"]
+    F --> F2["Pooling"]
+    F --> F3["Padding"]
+    F --> F4["Strides"]
+    F --> F5["LeNet-5"]
+    F --> F6["Image Classification"]
+    F --> F7["Image Data Generation"]
+
+    A --> G["Transfer Learning"]
+    G --> G1["VGG16"]
+    G --> G2["ImageNet"]
+    G --> G3["Pre-trained Models"]
+
+    A --> H["Applied Neural Networks"]
+    H --> H1["MNIST"]
+    H --> H2["Regression"]
+    H --> H3["Customer Churn"]
+
+    classDef root fill:#0f172a,color:#ffffff,stroke:#0f172a,stroke-width:2px;
+    classDef group fill:#e2e8f0,color:#0f172a,stroke:#64748b,stroke-width:1.5px;
+    classDef topic fill:#ffffff,color:#334155,stroke:#94a3b8,stroke-width:1px;
+
+    class A root;
+    class B,C,D,E,F,G,H group;
+    class B1,B2,B3,C1,C2,C3,C4,D1,D2,D3,D4,D5,D6,E1,E2,E3,E4,E5,E6,E7,F1,F2,F3,F4,F5,F6,F7,G1,G2,G3,H1,H2,H3 topic;
+```
+
+This structure is intentionally explicit: every node is connected to the single root, so GitHub has one unambiguous graph hierarchy. GitHub supports Mermaid diagrams in Markdown files. citeturn0search1turn0search8
 
 # Run It
+
 
 ## Option A — Google Colab
 
