@@ -65,7 +65,7 @@ Instead of treating deep learning as a collection of black-box APIs, the noteboo
 |  CSV datasets | **8** |
 |  Image assets | **2** |
 | Total tracked files | **46** |
-| Core learning tracks | **6+** |
+| Core learning tracks | **7** |
 |  Primary ecosystem | **Python + TensorFlow/Keras + NumPy** |
 
 ### The learning curve
