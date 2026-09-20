@@ -21,15 +21,15 @@
 </p>
 
 <p>
- <strong>43 repository files</strong> | <strong>31 notebooks</strong> | <strong>8 datasets</strong> | <strong>2 image assets</strong>
+ <strong>46 repository files</strong> | <strong>31 notebooks</strong> | <strong>8 datasets</strong> | <strong>2 image assets</strong>
 </p>
 
 <p>
- <a href="#-learning-architecture">Learning Architecture</a> |
- <a href="#-notebook-atlas">Notebook Atlas</a> |
- <a href="#-datasets">Datasets</a> |
- <a href="#-run-it">Run It</a> |
- <a href="#-repository-philosophy">Philosophy</a>
+ <a href="#learning-architecture">Learning Architecture</a> |
+ <a href="#notebook-atlas">Notebook Atlas</a> |
+ <a href="#dataset-directory">Dataset Directory</a> |
+ <a href="#run-it">Run It</a> |
+ <a href="#repository-philosophy">Philosophy</a>
 </p>
 
 </div>
@@ -64,7 +64,7 @@ Instead of treating deep learning as a collection of black-box APIs, the noteboo
 | Jupyter notebooks | **31** |
 |  CSV datasets | **8** |
 |  Image assets | **2** |
-| Total tracked files | **43** |
+| Total tracked files | **46** |
 | Core learning tracks | **6+** |
 |  Primary ecosystem | **Python + TensorFlow/Keras + NumPy** |
 
