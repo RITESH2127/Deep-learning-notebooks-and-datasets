@@ -1,38 +1,45 @@
-<!--
- Visual-first README for GitHub.
- Inventory verified against the main branch.
--->
-
 <div align="center">
+
+<p>
+  <img src="./visualizations/hero-banner.svg" alt="Deep Learning Notebooks and Datasets — visual learning laboratory">
+</p>
 
 # Deep Learning Notebooks & Datasets
 
-### A visual, hands-on deep learning laboratory — from the perceptron to CNNs, transfer learning, optimization, and applied neural networks.
+### A structured, visual, hands-on deep learning laboratory
 
 <p>
- <a href="https://github.com/RITESH2127/Deep-learning-notebooks-and-datasets">
- <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub Repository">
- </a>
- <img src="https://img.shields.io/badge/Notebooks-31-FF6F00?style=for-the-badge&logo=jupyter" alt="31 Jupyter notebooks">
- <img src="https://img.shields.io/badge/Datasets-8-2E7D32?style=for-the-badge&logo=databricks" alt="8 datasets">
- <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
- <img src="https://img.shields.io/badge/TensorFlow%20%2F%20Keras-Deep%20Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow and Keras">
- <img src="https://img.shields.io/badge/License-MIT-0A7BBB?style=for-the-badge" alt="MIT License">
+  <a href="https://github.com/RITESH2127/Deep-learning-notebooks-and-datasets">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub repository">
+  </a>
+  <a href="https://github.com/RITESH2127/Deep-learning-notebooks-and-datasets/actions/workflows/validate-repository.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/RITESH2127/Deep-learning-notebooks-and-datasets/validate-repository.yml?branch=main&style=for-the-badge&label=validation" alt="Repository validation workflow">
+  </a>
+  <img src="https://img.shields.io/badge/Notebooks-31-FF6F00?style=for-the-badge&logo=jupyter" alt="31 Jupyter notebooks">
+  <img src="https://img.shields.io/badge/Datasets-8-2E7D32?style=for-the-badge" alt="8 datasets">
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/TensorFlow%20%2F%20Keras-Deep%20Learning-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow and Keras">
+  <img src="https://img.shields.io/badge/License-MIT-0A7BBB?style=for-the-badge" alt="MIT License">
 </p>
 
 <p>
- <strong>46 repository files</strong> | <strong>31 notebooks</strong> | <strong>8 datasets</strong> | <strong>2 image assets</strong>
+  <strong>31 notebooks</strong> · <strong>8 datasets</strong> · <strong>7 learning stages</strong> · <strong>visual experiments</strong> · <strong>automated validation</strong>
 </p>
 
 <p>
- <a href="#learning-architecture">Learning Architecture</a> |
- <a href="#notebook-atlas">Notebook Atlas</a> |
- <a href="#dataset-directory">Dataset Directory</a> |
- <a href="#run-it">Run It</a> |
- <a href="#repository-philosophy">Philosophy</a>
+  <a href="#start-here">Start Here</a> ·
+  <a href="#notebook-atlas">Notebook Atlas</a> ·
+  <a href="#visual-data-atlas">Visual Atlas</a> ·
+  <a href="#dataset-directory">Datasets</a> ·
+  <a href="#run-it">Run It</a> ·
+  <a href="#repository-engineering">Engineering</a>
 </p>
 
 </div>
+
+> **Core idea:** do not memorize deep learning as a list of APIs. Build intuition from first principles, verify it with experiments, visualize what changes, and then apply the idea to real models.
+
+---
 
 ---
 
@@ -73,6 +80,26 @@ Instead of treating deep learning as a collection of black-box APIs, the noteboo
 **Foundations** -> **Optimization** -> **Training** -> **Generalization** -> **CNNs** -> **Transfer Learning** -> **Applied Deep Learning**
 
 ---
+
+## Start Here
+
+If you are opening this repository for the first time, use this order:
+
+| Goal | Open |
+|:---|:---|
+| Follow the complete curriculum | [Structured Learning Path](./docs/LEARNING_PATH.md) |
+| Start from first principles | [Perceptron](./Perceptron.ipynb) → [Neural Network from Scratch](./neural_network_scratch.ipynb) |
+| Understand learning | [Backpropagation](./backpropagation_classification.ipynb) → [Gradient Descent](./Batch_vs_stochastic_GD.ipynb) → [Optimizers](./Optimizers.ipynb) |
+| Understand training failures | [Vanishing Gradients](./vanishing_gradient.ipynb) → [Initialization](./Xavier_and_He.ipynb) → [Batch Normalization](./batch_norm_example.ipynb) |
+| Learn CNNs | [CNN from Scratch](./CNN_from_scratch.ipynb) → [LeNet-5](./LENET5_CNN.ipynb) → [Image Classification](./ImageClassifierCNN.ipynb) |
+| Learn transfer learning | [VGG16](./transfer_learning_VGG16.ipynb) → [ImageNet](./pre_trained_imagenet_and_plots.ipynb) |
+| See applied models | [MNIST](./MNIST_digits_MLP.ipynb) · [Regression](./Regression_MLP.ipynb) · [Customer Churn](./CustomerChurnPredictionMLP.ipynb) |
+
+### The learning loop
+
+```text
+Concept → Predict → Implement → Visualize → Experiment → Explain → Build
+```
 
 ## Learning Architecture
 
@@ -388,13 +415,13 @@ No local environment is required for the basic notebook workflow.
 ~~~bash
 git clone https://github.com/RITESH2127/Deep-learning-notebooks-and-datasets.git
 cd Deep-learning-notebooks-and-datasets
-~~~
+```
 
 ### 2. Create an environment
 
 ~~~bash
 python -m venv .venv
-~~~
+```
 
 Activate it:
 
@@ -402,20 +429,20 @@ Activate it:
 
 ~~~powershell
 .venv\Scripts\activate
-~~~
+```
 
 **macOS / Linux**
 
 ~~~bash
 source .venv/bin/activate
-~~~
+```
 
 ### 3. Install the common notebook stack
 
 ~~~bash
 python -m pip install --upgrade pip
 pip install jupyter numpy pandas matplotlib scikit-learn tensorflow
-~~~
+```
 
 > Individual notebooks can require additional packages or external model/data downloads. If a notebook reports a missing dependency, install the package required by that notebook.
 
@@ -423,7 +450,7 @@ pip install jupyter numpy pandas matplotlib scikit-learn tensorflow
 
 ~~~bash
 jupyter notebook
-~~~
+```
 
 Then open the notebook you want to explore.
 
@@ -624,7 +651,7 @@ By working through the collection, you can build practical understanding of:
 
 # Repository Design
 
-~~~mermaid
+```mermaid
 flowchart TB
  R[" Repository"]
 
@@ -647,7 +674,7 @@ flowchart TB
  C --> P
  C --> A
  P --> A
-~~~
+```
 
 ---
 
@@ -693,7 +720,7 @@ The notebooks cover both **low-level intuition** and **higher-level frameworks**
 That makes the repository useful for:
 
 - Students learning deep learning
-- ‍ Developers building ML foundations
+-  Developers building ML foundations
 - Experimentation and rapid prototyping
 - Exam and interview revision
 - Understanding neural-network internals
@@ -705,52 +732,13 @@ That makes the repository useful for:
 
 | I want to... | Start here |
 |:---|:---|
-| Follow the complete learning path | [What You Will Learn](#what-you-will-learn) |
-| Understand the datasets | [Dataset Directory](#dataset-directory) |
+| Learn in the intended order | [What You Will Learn](#what-you-will-learn) |
+| Browse every notebook | [Notebook Atlas](#notebook-atlas) |
+| Explore the datasets visually | [Visual Data Atlas](#visual-data-atlas) |
+| Understand the dataset inventory | [Dataset Directory](#dataset-directory) |
+| Run locally or in Colab | [Run It](#run-it) |
 | Reproduce the environment | [Reproducibility](#reproducibility) |
-| Understand the notebook standard | [Notebook Quality Standard](#notebook-quality-standard) |
-| See experiment areas | [Experiments & Results](#experiments--results) |
-| Check repository automation | [Repository Engineering](#repository-engineering) |
-
-
-
-| I want to learn... | Start here |
-|:---|:---|
-| Perceptrons | [Perceptron.ipynb](./Perceptron.ipynb) |
-| Neural networks from scratch | [neural_network_scratch.ipynb](./neural_network_scratch.ipynb) |
-| Backpropagation | [backpropagation_classification.ipynb](./backpropagation_classification.ipynb) |
-| Gradient descent | [Batch_vs_stochastic_GD.ipynb](./Batch_vs_stochastic_GD.ipynb) |
-| Optimizers | [Optimizers.ipynb](./Optimizers.ipynb) |
-| Weight initialization | [Xavier_and_He.ipynb](./Xavier_and_He.ipynb) |
-| Batch normalization | [batch_norm_example.ipynb](./batch_norm_example.ipynb) |
-| Overfitting / regularization | [regularizationNN.ipynb](./regularizationNN.ipynb) |
-| Dropout | [dropout_classification.ipynb](./dropout_classification.ipynb) |
-| CNN fundamentals | [CNN_from_scratch.ipynb](./CNN_from_scratch.ipynb) |
-| Pooling | [pooling_CNN.ipynb](./pooling_CNN.ipynb) |
-| LeNet-5 | [LENET5_CNN.ipynb](./LENET5_CNN.ipynb) |
-| Image classification | [ImageClassifierCNN.ipynb](./ImageClassifierCNN.ipynb) |
-| Image augmentation | [ImageDataGenerator.ipynb](./ImageDataGenerator.ipynb) |
-| VGG16 transfer learning | [transfer_learning_VGG16.ipynb](./transfer_learning_VGG16.ipynb) |
-| ImageNet | [pre_trained_imagenet_and_plots.ipynb](./pre_trained_imagenet_and_plots.ipynb) |
-| MNIST | [MNIST_digits_MLP.ipynb](./MNIST_digits_MLP.ipynb) |
-| Regression with an MLP | [Regression_MLP.ipynb](./Regression_MLP.ipynb) |
-| Customer churn | [CustomerChurnPredictionMLP.ipynb](./CustomerChurnPredictionMLP.ipynb) |
-
----
-
-# Contributions
-
-This repository is primarily a personal learning laboratory, but improvements are welcome.
-
-If you find:
-
-- a broken notebook,
-- an incorrect explanation,
-- a reproducibility issue,
-- a dependency problem,
-- or an opportunity to improve an experiment,
-
-feel free to open an issue or submit a pull request.
+| Understand contribution standards | [Project Documentation](#project-documentation) |
 
 ---
 
