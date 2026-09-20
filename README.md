@@ -191,6 +191,54 @@ flowchart LR
 
 ---
 
+## Visual Data Atlas
+
+Every dataset in the repository now has a dedicated, repository-hosted visualization. These charts make the feature relationships, class structure, trends, and major patterns easier to inspect before opening the corresponding notebook.
+
+### Repository overview
+
+<p align="center"><img src="./visualizations/repository-overview.svg" alt="Repository inventory visualization"></p>
+
+### Notebook coverage
+
+<p align="center"><img src="./visualizations/learning-coverage.svg" alt="Notebook coverage by learning track"></p>
+
+### Dataset gallery
+
+| Dataset | Visualization | Primary view |
+|:---|:---:|:---|
+| [Admission_Predict_Ver1.1.csv](./Admission_Predict_Ver1.1.csv) | [View chart](./visualizations/Admission_Predict_Ver1.1.svg) | GRE score vs chance of admission |
+| [Churn_Modelling.csv](./Churn_Modelling.csv) | [View chart](./visualizations/Churn_Modelling.svg) | Churn rate by geography |
+| [DailyDelhiClimate.csv](./DailyDelhiClimate.csv) | [View chart](./visualizations/DailyDelhiClimate.svg) | Mean temperature across the full time series |
+| [Social_Network_Ads.csv](./Social_Network_Ads.csv) | [View chart](./visualizations/Social_Network_Ads.svg) | Age vs estimated salary by purchase outcome |
+| [car_prices.csv](./car_prices.csv) | [View chart](./visualizations/car_prices.svg) | Mileage vs selling price |
+| [concertriccir2.csv](./concertriccir2.csv) | [View chart](./visualizations/concertriccir2.svg) | Two-dimensional class geometry |
+| [diabetes.csv](./diabetes.csv) | [View chart](./visualizations/diabetes.svg) | Glucose vs BMI by outcome |
+| [ushape.csv](./ushape.csv) | [View chart](./visualizations/ushape.svg) | Two-dimensional U-shaped class geometry |
+
+### Dataset previews
+
+<p align="center">
+  <img src="./visualizations/Admission_Predict_Ver1.1.svg" width="47%" alt="Admission dataset visualization">
+  <img src="./visualizations/Churn_Modelling.svg" width="47%" alt="Customer churn dataset visualization">
+</p>
+<p align="center">
+  <img src="./visualizations/DailyDelhiClimate.svg" width="47%" alt="Delhi climate dataset visualization">
+  <img src="./visualizations/Social_Network_Ads.svg" width="47%" alt="Social network ads dataset visualization">
+</p>
+<p align="center">
+  <img src="./visualizations/car_prices.svg" width="47%" alt="Car prices dataset visualization">
+  <img src="./visualizations/concertriccir2.svg" width="47%" alt="Concentric circles dataset visualization">
+</p>
+<p align="center">
+  <img src="./visualizations/diabetes.svg" width="47%" alt="Diabetes dataset visualization">
+  <img src="./visualizations/ushape.svg" width="47%" alt="U-shape dataset visualization">
+</p>
+
+> The visualizations are descriptive views of the files stored in this repository. They are intended for exploration and learning, not as standalone statistical conclusions.
+
+---
+
 ## Dataset Lab
 
 The repository currently contains **8 CSV datasets** used across experiments.
@@ -210,7 +258,7 @@ The repository currently contains **8 CSV datasets** used across experiments.
 
 ---
 
-## ️ Visual Assets
+## Visual Assets
 
 The repository also contains two image assets used by selected notebooks:
 
